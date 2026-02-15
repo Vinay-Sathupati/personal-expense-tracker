@@ -58,7 +58,7 @@ const Dashboard = () => {
     const incomeDonutData = prepareDonutData(incomeCategories, incomeBaseColor)
 
     //Monthly Breakdown Bar Chart
-    const barData = prepareMonthlyBarData(monthly)
+    const barData = prepareMonthlyBarData(monthly || [])
 
     if (!summary) {
         return (
