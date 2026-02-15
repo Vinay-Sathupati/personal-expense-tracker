@@ -1,0 +1,37 @@
+POST http://localhost:3001/api/user/register
+Content-Type: application/json
+
+{
+    "name": "test1",
+    "email": "test1@test.com",
+    "password": "test1_123"
+}
+###
+
+GET http://localhost:3001/api/user/me
+###
+
+
+POST http://localhost:3001/api/user/login
+Content-Type: application/json
+
+{
+    "email": "test1@test.com",
+    "password": "test1_123"
+}
+###
+
+GET http://localhost:3001/api/dashboard/summary
+###
+
+GET http://localhost:3001/api/dashboard/category-breakdown
+###
+
+GET http://localhost:3001/api/dashboard/recent
+###
+
+GET http://localhost:3001/api/dashboard/monthly-breakdown
+###
+
+GET http://localhost:3001/api/transactions
+###

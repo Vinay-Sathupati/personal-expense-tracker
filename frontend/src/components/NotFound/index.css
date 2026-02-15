@@ -1,0 +1,165 @@
+.not-found-container {
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    font-family: 'Poppins';
+    border: #111 solid 1px;
+}
+
+
+
+
+.error-lottie{
+    height: 100%;
+}
+
+.not-found-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.not-found-heading{
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: #111;
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.not-found-text-button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.not-found-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #21242D;
+}
+
+.go-home-button {
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    background-color:  #21242D;
+    color: #D3D3D3;
+}
+
+.go-home-button:hover span{
+    display: inline-block;
+    animation: wave 0.6s ease forwards;
+}
+
+@keyframes wave {
+    0% {transform: translateY(0);}
+    30% {transform: translateY(-6px);}
+    60% {transform: translateY(3px);}
+    100% {transform: translateY(0);}
+}
+
+.link-item {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1600px) {
+    .not-found-container {
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .not-found-heading {
+        font-size: 38px;
+    }
+
+    .not-found-text {
+        font-weight: 500;
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .not-found-heading {
+        font-size: 36px;
+    }
+
+    .not-found-text {
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .not-found-container {
+        flex-direction: column;
+    }
+
+    .not-found-heading {
+        font-size: 32px;
+    }
+
+    .not-found-text {
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .not-found-container {
+        flex-direction: column;
+    }
+
+    .not-found-heading {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: 0px;
+    }
+
+    .not-found-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        width: 296px;
+    }
+
+    .go-home-button {
+        width: 127px;
+        height: 40px;
+        border-radius: 3px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+}
